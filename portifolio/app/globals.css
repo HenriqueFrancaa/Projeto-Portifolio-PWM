@@ -5,8 +5,7 @@ body {
 }
 
 body {
-
-  background-color: #001839;
+  background: linear-gradient(to right, #140c6e, #001839);
 }
 
 * {
@@ -26,7 +25,7 @@ a {
   }
 }
 
- 
+/* HEADER ZONE*/
 header {
   background: linear-gradient(to right, #fefefe, #ffffff);
   color: #0a0909;
@@ -34,21 +33,20 @@ header {
   padding: 2.5rem 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: bold;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
-
 header p {
   font-size: 1.5rem;
   opacity: 0.9;
 }
+/* HEADER ZONE END*/
+
 
 /* Centro da pagina*/
-
 .centralize {
   display: flex;
   justify-content: center;
@@ -62,6 +60,8 @@ header p {
   padding: 0 20px;
   /* Evita encostar nas bordas */
 }
+
+/* Centro da pagina Zone END*/
 
 
 .text-content {
@@ -81,7 +81,6 @@ header p {
   color: #fcfdff;
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 0.5rem;
-  
 }
 
 
@@ -105,4 +104,121 @@ header p {
 
 .pic:hover {
   transform: scale(1.05);
+}
+
+.projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px;
+  margin-bottom: 40px;
+  
+  border-bottom: 1px solid #eaf6ffff;
+}
+
+.project-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  color: rgb(2, 7, 12);
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 4px 8px #00000033;
+  min-height: 500px;
+}
+
+.project-box button{
+  background-color: #3678d4;
+  color: whitesmoke;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 25;
+}
+
+.project-box img{
+  width: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-box h1{
+  font-size: 2em;
+   margin: 5px;
+}
+
+.project-box p{
+  font-size: 1.45em;
+}
+
+.skills-tools {
+  display: flex;
+  justify-content: space-between;
+  /* separa os blocos */
+  align-items: flex-start;
+  gap: 40px;
+  /* espaço entre linguagens e tools */
+  padding: 20px;
+  flex-wrap: wrap;
+  /* responsivo: quebra se for tela menor */
+}
+
+
+/*SKILLS ZONE*/
+.skills {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills h3 {
+  background-color: #3678d4;
+  color: whitesmoke;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+  
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+
+.tools{
+  text-align: right;
+  justify-content: right;
+}
+
+.tools h3{
+  background-color: #3678d4;
+  color: whitesmoke;
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.tools-icons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
 }
