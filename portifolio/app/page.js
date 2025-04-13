@@ -19,9 +19,7 @@ export default function Home() {
               Também faço parte do grupo de Programação Competitiva da UNICAP, onde estudamos algoritmos voltados para a resolução de problemas.
               É um desafio empolgante e algo que considero verdadeiramente fascinante!
           </p>
-        <div>
-          <h2>Github</h2>
-        </div>
+        
         </div>
     </div>
 
