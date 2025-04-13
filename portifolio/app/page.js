@@ -29,7 +29,7 @@ export default function Home() {
 
       <div className="projects">
 
-        <div className="project-box pic">
+        <div className="project-box">
           <h1>Workshop de Programação Competitiva</h1>
           <img src="/maratona.webp" />
           <p>
@@ -37,11 +37,11 @@ export default function Home() {
             <br/><br/>O workshop abordou desde os conceitos básicos de programação até algoritmos mais avançados. 
             Durante o evento, cada integrante da equipe ministrou aulas, e os participantes puderam colocar seus conhecimentos em prática por meio de competições realizadas ao longo das semanas.
           </p>
-          <a href="https://www.instagram.com/p/DGT9qqPy9I9/">
-            <button>Saiba mais!</button></a>
+          <a href="https://www.instagram.com/p/DGT9qqPy9I9/" target="_blank">
+            <button className="pic">Saiba mais!</button></a>
         </div>
     
-        <div className="project-box pic">
+        <div className="project-box">
           <h1>Jogo da senha</h1>
           <img src="/senha.png"/>
           <p>
@@ -51,19 +51,19 @@ export default function Home() {
             Boa sorte e divirta-se!
           </p>
 
-          <a href="/jogo-senha">
-          <button>Jogar</button></a>
+          <a href="/jogo-senha" target="_blank">
+          <button className="pic">Jogar</button></a>
         </div>
 
-        <div className="project-box pic">
+        <div className="project-box">
           <h1>Quiz de Ciência da Computação</h1>
           <img src="/quizc3.webp"/>
           <p>
             O projeto consiste em um quiz voltado para alunos de Ciência da Computação, do 1º ao 5º período, com perguntas baseadas nos conteúdos das disciplinas. 
             <br/><br/>A proposta é utilizar a gamificação como ferramenta para tornar o aprendizado mais leve, divertido e interativo, incentivando os estudantes a revisarem os conteúdos de forma mais engajada e motivadora
           </p>
-          <a href="https://projeto-web-mobile-seven.vercel.app/">
-            <button>Jogar</button></a>
+          <a href="https://projeto-web-mobile-seven.vercel.app/" target="_blank">
+            <button className="pic">Jogar</button></a>
         </div>
 
       </div>

@@ -44,9 +44,9 @@ footer {
 
 footer p{
   font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -159,6 +159,7 @@ header p {
   display: inline-block;
   margin-bottom: 20px;
   font-size: 25;
+  cursor: pointer;
 }
 
 .project-box img{
@@ -176,6 +177,7 @@ header p {
 .project-box p{
   font-size: 1.45em;
 }
+
 
 
 .skills-tools {
