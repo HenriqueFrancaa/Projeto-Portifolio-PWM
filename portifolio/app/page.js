@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Cabecalho } from "@/components/cabecalho";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
         <div className="project-box pic">
           <h1>Jogo da senha</h1>
           <img src="/biblioteca.png"/>
-          <button>Jogar</button>
+          <a href="/jogo-senha">Jogo senha</a>
         </div>
 
         <div className="project-box pic">

@@ -222,3 +222,70 @@ header p {
   padding: 0;
   gap: 20px;
 }
+
+.senha-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.box-senha{
+  background: rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  border-style: groove;
+}
+
+.box-senha p{
+  font-size: 1.1em;
+  margin-top: 0.4em;
+}
+
+.palpite{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20;
+}
+
+.palpite input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s ease;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.palpite input:focus{
+  border-color: #207dc1;
+  box-shadow: 0 0 6px rgba(0, 112, 243, 0.5);
+}
+
+.palpite button{
+  text-decoration: none;
+  background-color: #207dc1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.palpite button:hover{
+  background-color: #207dc1;
+  transform: translateY(-2px);
+} 
