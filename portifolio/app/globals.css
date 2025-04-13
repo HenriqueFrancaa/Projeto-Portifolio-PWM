@@ -33,6 +33,22 @@ header {
   padding: 2.5rem 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+footer {
+  background: linear-gradient(to right, #fefefe, #ffffff);
+  color: #0a0909;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer p{
+  font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
 header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
