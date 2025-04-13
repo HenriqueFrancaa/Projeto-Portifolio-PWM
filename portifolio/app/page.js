@@ -19,7 +19,22 @@ export default function Home() {
               Também faço parte do grupo de Programação Competitiva da UNICAP, onde estudamos algoritmos voltados para a resolução de problemas.
               É um desafio empolgante e algo que considero verdadeiramente fascinante!
           </p>
-        
+          <h3>Entre em contato comigo</h3>
+          <div className="contato">
+          <a href="https://www.instagram.com/henriq.francaa" target="_blank">
+            <button className="insta pic">Instagram</button>
+          </a>
+            <a href="https://www.linkedin.com/in/henrique-franca-16390125b/" target="_blank">
+            <button className="linkedin pic">Linkedin</button>
+          </a>
+            <a href="https://github.com/HenriqueFrancaa" target="_blank">
+            <button className="github pic">Github</button>
+          </a>
+          <a href="mailto:henrique23.franca@gmail.com">
+            <button className="email pic">Email</button>
+          </a>
+          </div>
+
         </div>
     </div>
 

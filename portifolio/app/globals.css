@@ -89,6 +89,7 @@ header p {
   max-width: 700px;
   font-size: 20px;
   margin-left: 23;
+  gap: 1em;
 }
 
 
@@ -98,7 +99,84 @@ header p {
   color: #fcfdff;
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 0.5rem;
-  
+}
+
+.text-content h3{
+  border-bottom: 2px solid;
+}
+
+.contato{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.insta{
+  background: linear-gradient(135deg, #450fd7, #db034b);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.linkedin {
+  background: linear-gradient(135deg, #1a70bb, #0a55e0);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.github{
+  background: linear-gradient(135deg, #9b1abb, #710ae0);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.email{
+  background: linear-gradient(135deg, #a36816, #e00a23);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 
@@ -151,15 +229,20 @@ header p {
 }
 
 .project-box button{
-  background-color: #3678d4;
-  color: whitesmoke;
-  border-radius: 12px;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-bottom: 20px;
-  font-size: 25;
+  background: linear-gradient(135deg, #164aa3, #180ae0);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 10px 15px rgba(2, 2, 5, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .project-box img{
@@ -201,13 +284,20 @@ header p {
 }
 
 .skills h3 {
-  background-color: #3678d4;
-  color: whitesmoke;
-  border-radius: 12px;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #164aa3, #180ae0);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(14, 14, 15, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   
 }
 
@@ -227,13 +317,20 @@ header p {
 }
 
 .tools h3{
-  background-color: #3678d4;
-  color: whitesmoke;
-  border-radius: 12px;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #164aa3,#180ae0);
+  /* roxo-azulado */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .tools-icons{
@@ -295,16 +392,21 @@ header p {
 }
 
 .palpite button{
-  text-decoration: none;
-  background-color: #001839;
+  background: linear-gradient(135deg, #164aa3, #180ae0);
+  /* roxo-azulado */
+  text-align: center;
   color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 0.75rem 1.5rem;
   border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .palpite button:hover{
@@ -320,14 +422,26 @@ ul{
   max-height: 230px;
   overflow-y: auto;
 }
+
 ul li {
-  background-color: #001839;
-  color: rgb(253, 254, 255);
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  font-size: 0.9em;
+  background: linear-gradient(135deg, #091d3f, #180ae0);
+    /* roxo-azulado */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 10px;
 }
+
+/* margin-bottom: 10px; */
 
 .opcoes{
   display: flex;
@@ -336,14 +450,18 @@ ul li {
 }
 
 .opcoes button{
-  text-decoration: none;
-  background-color: #001839;
+  background: linear-gradient(135deg, #164aa3, #180ae0);
+  /* roxo-azulado */
   color: white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 0.75rem 1.5rem;
   border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(85, 88, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
