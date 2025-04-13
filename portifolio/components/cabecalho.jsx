@@ -4,7 +4,9 @@ export function Cabecalho(){
     return(
         <>
         <header>
-            <h1>Henrique Franca</h1>
+            <a href="/">
+                <h1 className="pic">Henrique Franca</h1>
+            </a>
             <p>Graduando em Ciência da Computação | PIBIC | Maratonista</p>
         </header>
         </>

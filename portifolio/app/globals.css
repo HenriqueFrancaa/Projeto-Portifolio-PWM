@@ -53,7 +53,7 @@ header p {
   /* Centraliza horizontalmente */
   align-items: center;
   /* Centraliza verticalmente */
-  height: 80vh;
+  height: 70vh;
   /* Ocupa 80% da altura da tela */
   gap: 20px;
   /* Espaço entre imagem e texto */
@@ -151,12 +151,14 @@ header p {
 
 .project-box h1{
   font-size: 2em;
-   margin: 5px;
+  margin: 5px;
+  font-style:oblique;
 }
 
 .project-box p{
   font-size: 1.45em;
 }
+
 
 .skills-tools {
   display: flex;
@@ -274,7 +276,7 @@ header p {
 
 .palpite button{
   text-decoration: none;
-  background-color: #207dc1;
+  background-color: #001839;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -289,3 +291,39 @@ header p {
   background-color: #207dc1;
   transform: translateY(-2px);
 } 
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+  max-height: 230px;
+  overflow-y: auto;
+}
+ul li {
+  background-color: #001839;
+  color: rgb(253, 254, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.opcoes{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.opcoes button{
+  text-decoration: none;
+  background-color: #001839;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

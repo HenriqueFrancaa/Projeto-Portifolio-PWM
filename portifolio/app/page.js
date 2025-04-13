@@ -18,6 +18,9 @@ export default function Home() {
               Também faço parte do grupo de Programação Competitiva da UNICAP, onde estudamos algoritmos voltados para a resolução de problemas.
               É um desafio empolgante e algo que considero verdadeiramente fascinante!
           </p>
+        <div>
+          <h2>Github</h2>
+        </div>
         </div>
     </div>
 
@@ -39,8 +42,16 @@ export default function Home() {
     
         <div className="project-box pic">
           <h1>Jogo da senha</h1>
-          <img src="/biblioteca.png"/>
-          <a href="/jogo-senha">Jogo senha</a>
+          <img src="/senha.png"/>
+          <p>
+            O Jogo da Senha (Touros e Vacas) consiste em adivinhar uma sequência secreta de 4 números únicos.<br/>
+            A cada palpite, o jogo irá te dar dois tipos de feedback: Touros, que indicam números corretos na posição certa, e Vacas, que indicam números corretos, mas na posição errada. 
+            O objetivo é acertar todos os números na ordem correta com o menor número de tentativas.
+            Boa sorte e divirta-se!
+          </p>
+
+          <a href="/jogo-senha">
+          <button>Jogar</button></a>
         </div>
 
         <div className="project-box pic">

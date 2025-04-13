@@ -6,42 +6,69 @@ import { useRouter } from "next/navigation";
 
 export default function JogoSenha() {
     const router = useRouter();
-    const [secretNumber, setSecretNumber] = useState(generateSecretNumber());
-    const [guess, setGuess] = useState("");
-    const [feedback, setFeedback] = useState([]);
+    const [numeroSecreto, setNumeroSecreto] = useState(gerarNumeroSecreto());
+    const [palpite, setPalpite] = useState("");
+    const [historico, setHistorico] = useState([]);
 
-    function generateSecretNumber() {
-        const digits = [];
-        while (digits.length < 4) {
+    function gerarNumeroSecreto() {
+        const digitos = [];
+        while (digitos.length < 4) {
             const d = Math.floor(Math.random() * 10);
-            if (!digits.includes(d)) digits.push(d);
+            if (!digitos.includes(d)) digitos.push(d);
         }
-        return digits.join("");
+        return digitos.join("");
     }
 
-    function handleGuess() {
-        if (guess.length !== 4 || new Set(guess).size !== 4) {
+    function verificarPalpite() {
+        if (palpite.length !== 4 || new Set(palpite).size !== 4) {
             return alert("Digite um número de 4 dígitos únicos.");
         }
 
-        const bulls = [...guess].filter((d, i) => d === secretNumber[i]).length;
-        const cows = [...guess].filter(
-            (d, i) => d !== secretNumber[i] && secretNumber.includes(d)
-        ).length;
+        let touros = 0;
+        let vacas = 0;
+        const digitosPalpite = palpite.split("");
+        const digitosSecretos = numeroSecreto.split("");
 
-        setFeedback([{ guess, bulls, cows }, ...feedback]);
-        setGuess("");
+        // Primeiro, marcar os Touros
+        const unmatchedGuess = [];
+        const unmatchedSecret = [];
 
-        if (bulls === 4) {
-            alert(`Parabéns! Você acertou o número secreto ${secretNumber}!`);
-            resetGame();
+        for (let i = 0; i < 4; i++) {
+            if (digitosPalpite[i] === digitosSecretos[i]) {
+                touros++;
+            } else {
+                unmatchedGuess.push(digitosPalpite[i]);
+                unmatchedSecret.push(digitosSecretos[i]);
+            }
+        }
+
+        
+        unmatchedGuess.forEach((digito) => {
+            const index = unmatchedSecret.indexOf(digito);
+            if (index !== -1) {
+                vacas++;
+                unmatchedSecret.splice(index, 1); // Remove esse dígito para não contar duas vezes
+            }
+        });
+
+        setHistorico([{ palpite, touros, vacas }, ...historico]);
+        setPalpite("");
+
+        if (touros === 4) {
+            alert(`Muito bom, você acertou o número secreto ${numeroSecreto}!`);
+            Reiniciar();
         }
     }
 
-    function resetGame() {
-        setSecretNumber(generateSecretNumber());
-        setGuess("");
-        setFeedback([]);
+
+    function Reiniciar() {
+        setNumeroSecreto(gerarNumeroSecreto());
+        setPalpite("");
+        setHistorico([]);
+    }
+
+    function showSecretNumber() {
+        alert(`O número secreto era: ${numeroSecreto}`);
     }
 
     return (
@@ -56,27 +83,36 @@ export default function JogoSenha() {
                     <div className="palpite">
                         <input
                             type="text"
-                            value={guess}
-                            onChange={(e) => setGuess(e.target.value)}
+                            value={palpite}
+                            onChange={(e) => setPalpite(e.target.value)}
                             maxLength={4}
                             placeholder="Digite sua tentativa"
                         />
-                        <button onClick={handleGuess}>
+                        <button onClick={verificarPalpite}>
                             Adivinhar
                         </button>
                     </div>
                     
-                    <ul>
-                        {feedback.map((entry, index) => (
+                    <ul className="historico">
+                        {historico.map((entry, index) => (
                             <li key={index}>
-                                <span>{entry.guess}</span>
+                                <span>{entry.palpite}</span> ( {/* <- separador */}
                                 <span>
-                                    {entry.bulls} Touros, {entry.cows} Vacas
+                                    {entry.touros} Touros, {entry.vacas} Vacas )
                                 </span>
                             </li>
                         ))}
                     </ul>
-
+                    
+                    <div className="opcoes">
+                        <button onClick={showSecretNumber}>
+                            Mostrar Resposta
+                        </button>
+                        <button onClick={Reiniciar}>
+                            Reiniciar
+                        </button>
+                        
+                    </div>
                 </div>
             </div>
         </>
