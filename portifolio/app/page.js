@@ -38,6 +38,8 @@ export default function Home() {
             <br/><br/>O workshop abordou desde os conceitos básicos de programação até algoritmos mais avançados. 
             Durante o evento, cada integrante da equipe ministrou aulas, e os participantes puderam colocar seus conhecimentos em prática por meio de competições realizadas ao longo das semanas.
           </p>
+          <a href="https://www.instagram.com/p/DGT9qqPy9I9/">
+            <button>Saiba mais!</button></a>
         </div>
     
         <div className="project-box pic">
@@ -61,14 +63,15 @@ export default function Home() {
             O projeto consiste em um quiz voltado para alunos de Ciência da Computação, do 1º ao 5º período, com perguntas baseadas nos conteúdos das disciplinas. 
             <br/><br/>A proposta é utilizar a gamificação como ferramenta para tornar o aprendizado mais leve, divertido e interativo, incentivando os estudantes a revisarem os conteúdos de forma mais engajada e motivadora
           </p>
-
+          <a href="https://projeto-web-mobile-seven.vercel.app/">
+            <button>Jogar</button></a>
         </div>
 
       </div>
 
       <div className="skills-tools">
         <div className="text-content">
-          <h1>Linguagens de Programação</h1>
+          <h1>Linguagens de Programação utilizadas</h1>
           <div className="skills skills-icons">
             <h3 className="pic">C++</h3>
             <h3 className="pic">C</h3>
@@ -82,7 +85,7 @@ export default function Home() {
         </div>
           
           <div className="text-content">
-            <h1>Ferramentas</h1>
+            <h1>Ferramentas utilizadas</h1>
             <div className="tools tools-icons">
               <h3 className="pic">Git</h3>
               <h3 className="pic">Vim</h3>
