@@ -14,10 +14,11 @@ export default function Home() {
         <div className="text-content">
           <h1>Um pouco sobre mim</h1>
           <p>
-              Sou estudante de Ciência da Computação e atualmente estou no 5º período do curso. 
-              Tenho uma grande paixão por aprender coisas novas — seja linguagens de programação, algoritmos ou explorar o mundo em constante evolução da tecnologia. Gosto de registrar tudo o que aprendo ao longo dessa jornada.
-              Também faço parte do grupo de Programação Competitiva da UNICAP, onde estudamos algoritmos voltados para a resolução de problemas.
-              É um desafio empolgante e algo que considero verdadeiramente fascinante!
+            Sou estudante de Ciência da Computação na Universidade Católica de Pernambuco (UNICAP) e atualmente estou no 5º período do curso. Tenho grande interesse em aprender coisas novas — seja explorando linguagens de programação, algoritmos ou desbravando o universo da tecnologia.
+
+            Faço parte do grupo de Programação Competitiva da UNICAP, onde estudamos algoritmos aplicados à resolução de problemas diversos. É um desafio empolgante e algo que considero extremamente fascinante.
+
+            Além disso, participo de um projeto de Iniciação Científica na UNICAP, sob orientação do professor Diego Pinheiro.
           </p>
           <h3>Entre em contato comigo</h3>
           <div className="contato">
